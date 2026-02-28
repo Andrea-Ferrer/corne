@@ -21,10 +21,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp TAB        &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL      &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LS(LSHFT)  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                             &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
 
@@ -37,7 +37,7 @@
 
             bindings = <
 &kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6        &kp N7          &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT      &kp DOWN        &kp UP    &kp RIGHT  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT      &kp DOWN        &kp UP    &kp RIGHT  &kp LT  &kp GT
 &kp LSHFT   &kp LC(C)     &kp LC(V)     &kp LC(X)     &kp LC(Z)     &trans          &msc SCRL_UP  &msc SCRL_DOWN  &trans    &trans     &trans  &trans
                                         &kp LGUI      &trans        &kp SPACE       &kp RET       &trans          &kp RALT
             >;
@@ -45,10 +45,10 @@
 
         layer_two {
             bindings = <
-&kp TAB         &kp EXCLAMATION  &kp AT_SIGN       &kp POUND       &kp DOLLAR  &kp PERCENT      &kp CARET         &kp AMPS       &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
-&kp LCTRL       &kp UNDERSCORE   &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp COLON   &kp LESS_THAN    &kp GREATER_THAN  &kp SEMICOLON  &kp RIGHT_BRACE  &kp RIGHT_BRACKET     &kp EQUAL              &kp SQT
-&kp LEFT_SHIFT  &kp BACKSLASH    &kp PIPE          &kp TILDE       &kp COMMA   &kp QUESTION     &kp PLUS          &kp MINUS      &kp ASTERISK     &kp SLASH             &kp PERIOD             &kp DOUBLE_QUOTES
-                                                   &trans          &trans      &trans           &trans            &trans         &trans
+&kp TAB         &kp EXCLAMATION  &kp AT_SIGN       &kp POUND       &kp DOLLAR  &kp PERCENT     &kp CARET  &kp AMPS       &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
+&kp LCTRL       &kp UNDERSCORE   &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp COLON   &kp LT          &kp GT     &kp SEMICOLON  &kp RIGHT_BRACE  &kp RIGHT_BRACKET     &kp EQUAL              &kp SQT
+&kp LEFT_SHIFT  &kp BACKSLASH    &kp PIPE          &kp TILDE       &kp COMMA   &kp QUESTION    &kp PLUS   &kp MINUS      &kp ASTERISK     &kp SLASH             &kp PERIOD             &kp DOUBLE_QUOTES
+                                                   &trans          &trans      &trans          &trans     &trans         &trans
             >;
         };
 
