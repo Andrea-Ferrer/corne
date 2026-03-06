@@ -10,12 +10,46 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    macros {
+ macros {
         macro_nye: macro_nye {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "MACRO_NYE";
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N4>, <&macro_release &kp LALT>;
+        };
+        macro_a_acc: macro_a_acc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N0>, <&macro_release &kp LALT>;
+        };
+        macro_e_acc: macro_e_acc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N1 &kp KP_N3 &kp KP_N0>, <&macro_release &kp LALT>;
+        };
+        macro_i_acc: macro_i_acc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N1>, <&macro_release &kp LALT>;
+        };
+        macro_o_acc: macro_o_acc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N2>, <&macro_release &kp LALT>;
+        };
+        macro_u_acc: macro_u_acc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N3>, <&macro_release &kp LALT>;
+        };
+        macro_ques: macro_ques {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>, <&macro_release &kp LALT>;
+        };
+        macro_excl: macro_excl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N1 &kp KP_N7 &kp KP_N3>, <&macro_release &kp LALT>;
         };
     };
 
